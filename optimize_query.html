@@ -1,0 +1,32 @@
+<!-- <html>
+  <body>
+    <h1>SQL Query Optimizer</h1>
+
+    <form method="post" action="/">
+      <label for="query">Enter your SQL query:</label><br>
+      <textarea name="query" rows="4" cols="50"></textarea><br>
+      <input type="submit" value="Optimize">
+    </form> 
+
+    {% if original_query %}
+      <h2>Original Query:</h2>
+      <p>{{ original_query }}</p>
+      <h2>Optimized Query:</h2>
+      <p>{{ optimized_query }}</p>
+    {% endif %}
+  </body>
+</html> -->
+
+<html>
+  <head>
+    <title>Query Optimization</title>
+  </head>
+  <body>
+    <h1>Optimize Your Query</h1>
+    <form action="/optimize-query" method="GET">
+      <label for="query">Enter your query:</label><br>
+      <textarea name="query" rows="4" cols="50"></textarea><br>
+      <input type="submit" value="Optimize">
+    </form> 
+  </body>
+</html>
